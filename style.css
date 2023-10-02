@@ -1,0 +1,493 @@
+*
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.maincontainer
+{
+    height: 100%;
+    width: 100%;
+    background-image: url(background-img.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header
+{
+    width: 100%;
+    height: 150px;
+    background-color:blue;
+    opacity: 0.2;
+    color: white;
+    text-decoration: none;
+} 
+
+.greenbox {
+   height: 270px;
+   width: 270px;
+   margin-left: 75%;
+   position: absolute;
+   margin-top: 45px;
+   z-index: 1;
+   background-blend-mode: overlay;
+}
+.greenbox::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  transform: rotate(3deg);
+  animation-name: rotate-background; 
+  animation-duration:8s;
+  animation-iteration-count:  infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate-background {
+   from {
+     transform: rotate(0deg);
+    
+   }
+   to {
+     transform: rotate(360deg);
+   
+   }
+ }
+ .yellowbox {
+   height: 250px;
+   width: 250px;
+   margin-left: 10px;
+   position: relative;
+   margin-top: 20px;
+   z-index: 0;
+}
+ .yellowbox::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: yellow;
+   transform: rotate(3deg);
+   animation-name: rotate-background-reverse;
+   animation-duration:  6s;
+   animation-iteration-count:  infinite;
+   animation-timing-function: ease-in-out;
+ }
+ @keyframes rotate-background {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @keyframes rotate-background-reverse {
+   from {
+     transform: rotate(360deg);
+   }
+   to {
+     transform: rotate(0deg);
+   }
+ }
+ .bluebox {
+   height: 230px;
+   width: 230px;
+   margin-left: 6%;
+   position: absolute;
+   margin-top: -245px;
+}
+.bluebox::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  transform: rotate(3deg);
+  animation: rotate-background; 
+  animation-duration:4s;
+  animation-iteration-count:  infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate-background {
+   from {
+     transform: rotate(0deg);
+    
+   }
+   to {
+     transform: rotate(360deg);
+   
+   }
+ }
+ .person
+{
+   height: 100%;
+   width: 100%;
+}
+.person img
+{
+   height: 200px;
+   width: 200px;
+   margin-top: -235px;
+   margin-left: 10%;
+   border-radius: 100px;
+}
+.home
+{
+   height: 50px;
+   width: 50px;
+   color:white;
+   margin-top: -710px;
+   margin-left: 470px;
+   font-weight: bolder;
+   position: absolute;
+   text-decoration: none;
+}
+.home a
+{
+   color: white;
+   text-decoration: none;
+}
+.home a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.myresume
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 550px;
+   font-weight: bolder;
+   position: absolute;
+}
+.myresume a
+{
+   color: white;
+   text-decoration: none;
+}
+.myresume a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.projects
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 650px;
+   font-weight: bolder;
+   position: absolute;
+}
+.projects a
+{
+   color: white;
+   text-decoration: none;
+}
+.projects a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.skills
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 765px;
+   font-weight: bolder;
+   position: absolute;
+}
+.skills a
+{
+   color: white;
+   text-decoration: none;
+}
+.skills a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.services
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 850px;
+   font-weight: bolder;
+   position: absolute;
+}
+.services a
+{
+   color: white;
+   text-decoration: none;
+}
+.services a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.aboutme
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 960px;
+   font-weight: bolder;
+   position: absolute;
+}
+.aboutme a
+{
+   color: white;
+   text-decoration: none;
+}
+.aboutme a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.contact
+{
+   height: 50px;
+   width: 50px;
+   color: white;
+   margin-top: -710px;
+   margin-left: 1050px;
+   font-weight: bolder;
+   position: absolute;
+}
+.contact a
+{
+   color: white;
+   text-decoration: none;
+}
+.contact a:hover
+{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+.person
+{
+   height: 100%;
+   width: 100%;
+   margin: 0px;
+}
+.contentcontainer
+{
+   height: 100px;
+   width: 700px;
+   position: relative;
+   margin-top: -380px;
+}
+.myname  i
+{
+   color: black;
+   margin-top: -200px;
+   margin-left: 20px;
+   font-size: 35px;
+   font-weight: bolder;
+   position: absolute;
+   animation-timing-function: ease-in-out;
+}
+.myname  i {
+   animation: text-animation 5s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes text-animation {
+   0% {
+     opacity: 0;
+     transform: translateY(-20px);
+     color: black;
+   }
+   50% {
+      opacity: 1;
+      transform: translateY(0px);
+      color: white;
+    }
+    75% {
+      opacity: 2;
+      transform: translateY(20px);
+      color:white;
+    }
+   100% {
+     opacity: 3;
+     transform: translateY(40px);
+     color: white;
+   }
+ }
+ .mywork  i
+{
+   color: black;
+   margin-top: -260px;
+   margin-left: 20px;
+   font-size: 35px;
+   font-weight: bolder;
+   position: absolute;
+   animation-timing-function: ease-in-out;
+}
+.mywork  i {
+   animation: text-animation 5s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes text-animation {
+   0% {
+     opacity: 0;
+     transform: translateY(-20px);
+     color: black;
+   }
+   50% {
+      opacity: 1;
+      transform: translateY(0px);
+      color: white;
+    }
+    75% {
+      opacity: 2;
+      transform: translateY(20px);
+      color:white;
+    }
+   100% {
+     opacity: 3;
+     transform: translateY(40px);
+     color: white;
+   }
+ }
+ .languages
+ {
+   width: 50%;
+   height: 100px;
+   align-items: center;
+   animation-name: language-animation;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   font-size: 25px;
+   font-weight: bolder;
+   margin-top: -230px;
+   margin-left: 230px;
+   animation-timing-function: ease-in-out;
+ }
+ @keyframes language-animation {
+   0% {
+    opacity: 1;
+     transform: translateX(0%);
+     color: white;
+   }
+   50% {
+      opacity: 2;
+      transform: translateX(50%);
+      color: white;
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(-50%);
+      color:white;
+    }
+   100% {
+     opacity: 3;
+     transform: translateX(-0%);
+     color: white;
+   }
+ }
+
+
+
+
+ .social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icon {
+  width: 35px;
+  height: 35px;
+  margin: 1px;
+  display: inline-block;
+  margin-top: 220px;
+  margin-right: 90px;
+}
+
+.social-media-icon img {
+  width: 100%;
+  height: 100%;
+  animation-name: img-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;    
+}
+@keyframes img-animation {
+  0% {
+   opacity: 1;
+    transform: translateX(0%);
+    color: white;
+  }
+  50% {
+     opacity: 2;
+     transform: translateX(50%);
+     color: white;
+   }
+   75% {
+     opacity: 0;
+     transform: translateX(-50%);
+     color:white;
+   }
+  100% {
+    opacity: 3;
+    transform: translateX(-0%);
+    color: white;
+  }
+}
+.social-media-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.social-media-icon:hover::after {
+  content: attr(data-name);
+  position: absolute;
+  margin-top: 100%;
+  margin-left: 50%;
+  transform: translate(-60%, -20px);
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  border-radius: 5px;
+  animation-name: icon-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;  
+}
+@keyframes icon-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
